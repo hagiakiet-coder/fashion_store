@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HÀ GIA KIỆT | THỰC HÀNH FRONT END</title>
+    <link rel="shortcut icon" href="./img/logo-s.png">
+    <link rel="stylesheet" href="https://cdnjs.cloundflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./font/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="header-nav-bar">
+            <div class="grid wide">
+                <div class="header-nav-bar-main">
+                    <ul class="header-nav-bar-list">
+                        <li class="header-nav-bar-item">
+                            <i class="fas fa-phone-alt"></i>
+                            Hotline: 0908 77 00 95
+                        </li>
+                    </ul>
+                    <ul class="header-nav-bar-list no-display-mobile-tablet">
+                        <li class="header-nav-bar-item">
+                            <a href="" class="header-nav-bar-link link">
+                                <i class="fas fa-edit"></i>
+                                Kiểm tra đơn hàng
+                            </a>
+                        </li>
+                        <li class="header-nav-bar-item">
+                            <a href="" class="header-nav-bar-link link">
+                                <i class="fas fa-shopping-cart"></i>
+                                Giỏ hàng
+                            </a>
+                        </li>
+                        <li class="header-nav-bar-item">
+                            <a href="" class="header-nav-bar-link link">
+                                <i class="fas fa-sign-in-alt"></i>
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <li class="header-nav-bar-item">
+                            <a href="" class="header-nav-bar-link link">
+                                <i class="fas fa-key"></i>
+                                Đăng ký
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- responsive -->
+                   
+                    <ul class="header-nav-bar-list_responsive">
+                        <li class="header-nav-bar-list-item_responsive">
+                            <i class="fas fa-user header-nav-bar-list-item-icon_responsive"></i>
+                            <div class="header-nav-bar-list-item-icon-drop_responsive">
+                                <a href=""><i class="fas fa-sign-in-alt header-nav-bar-list-item-icon-drop-item_responsive"><span>&nbsp;Đăng ký</span></i></a>
+                                <a href=""><i class="fas fa-key header-nav-bar-list-item-icon-drop-item_responsive"><span>&nbsp;Đăng nhập</span></i></a>
+                            </div>
+                        </li>
+                        <li class="header-nav-bar-list-item_responsive">
+                            <i class="fas fa-list header-nav-bar-list-item-icon_responsive"></i>
+                            <div class="header-nav-bar-list-item-icon-drop_responsive">
+                                <a href=""><i class="fas fa-edit header-nav-bar-list-item-icon-drop-item_responsive"><span>&nbsp;Kiểm tra đơn hàng</span></i></a>
+                                <a href=""><i class="fas fa-shopping-cart header-nav-bar-list-item-icon-drop-item_responsive"><span>&nbsp;Giỏ hàng</span></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-with-search">
+            <div class="grid wide">
+                <div class="header-with-search-main">
+                    <div class="header-with-search-main_img no-display-mobile-tablet">
+                        <a href="" class="link"><img src="./img/logo-l.png" class="header-with-search-main_img-logo" alt="" name="logo" id="logo"></a>
+                    </div>
+                    <div class="header-with-search-main_search">
+                        <input type="text" class="main_search-input" placeholder="Nhập từ khóa tìm kiếm...">
+                        <button class="main_search-btn no-display-mobile">Tìm kiếm</button>
+                        <button class="main_search-btn main_search-btn_responsive"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="header-with-search-main_card-login">
+                        <a href="" class="main_item link">
+                            <div class="main_card">
+                                <i class="fas fa-shopping-basket"></i>
+                                <div class="main_card-amount">
+                                    <p class="main_card-amount-number">0</p>
+                                </div>
+                            </div>
+                        </a>  
+
+                        <a href="" class="main_item link">
+                            <div class="main_login">
+                               <i class="far fa-user"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="grid wide">
+                <div class="header-menu-main">
+                    <ul class="header-menu-list active-category no-display-mobile-tablet">
+                        <li class="header-menu-item">
+                            <span>DANH MỤC SẢN PHẨM</span> 
+                            <input type="checkbox" id="checkbox-1" class="checkbox-1" name="radio-1" style="display: none;">
+                            <label for="checkbox-1" id="checkbox-1-btn"><i class="fas fa-bars" style="color:var(--white-color-text); cursor: pointer;"></i></label>
+                         
+                            <ul class="header-menu-item_drop">
+                                <li class="header-menu-item_drop-item">
+                                   <a href="" class="header-menu-item_drop-item-link link flex">
+                                       <img src="./img/fashion-icon.png" alt="">
+                                       <span>Thời trang</span>
+                                       <i class="fas fa-angle-right"></i>
+                                   </a>
+
+                                   <ul class="header-menu-item_drop-item_classify-list">
+                                       <li class="header-menu-item_drop-item_classify-list-item">
+                                           <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                               Áo sơ mi
+                                           </a>
+                                       </li>
+                                       <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Áo khoác
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Áo thun
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Quần tây công sở
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Quần jean
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Đầm, váy nữ
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Chân váy
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Quần kaki nam
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Áo vest, blazer nam
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Quần shorts nam
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Đồ lót, đồ ngủ
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Quần thời trang
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Quần legging
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Trang phục cưới
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Đồ bơi
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-item_drop-item_classify-list-item">
+                                        <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                            Phụ kiện
+                                        </a>
+                                    </li>
+                                   </ul>
+                                </li>
+                                <li class="header-menu-item_drop-item">
+                                    <a href="" class="header-menu-item_drop-item-link link flex">
+                                        <img src="./img/phone-icon.png" alt="">
+                                        <span>Điện thoại & Ipad</span>
+                                    </a>
+                                 </li>
+                                 <li class="header-menu-item_drop-item">
+                                    <a href="" class="header-menu-item_drop-item-link link flex">
+                                        <img src="./img/slip-icon.png" alt="">
+                                        <span>Mỹ phẩm</span>
+                                    </a>
+                                 </li>
+                                 <li class="header-menu-item_drop-item">
+                                    <a href="" class="header-menu-item_drop-item-link link flex">
+                                        <img src="./img/sport-icon.png" alt="">
+                                        <span>Thể thao</span>
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+
+                                    <ul class="header-menu-item_drop-item_classify-sport-list">
+                                        <li class="header-menu-item_drop-item_classify-sport-list-item">
+                                            <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                                Bóng đá
+                                            </a>
+                                        </li>
+                                        <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Bóng chuyền
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Bóng bàn
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Bóng chày
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Tennis
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Bơi lội
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Cầu lông
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Áo thể thao tập gym
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Quần tập gym
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Máy tập thể thao
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Giày thể thao
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Mũ thể thao
+                                         </a>
+                                     </li>
+                                     <li class="header-menu-item_drop-item_classify-list-item">
+                                         <a href="" class="header-menu-item_drop-item_classify-list-item-link link">
+                                             Áo thể thao
+                                         </a>
+                                     </li>
+                                    </ul>
+                                 </li>
+                                 <li class="header-menu-item_drop-item">
+                                    <a href="" class="header-menu-item_drop-item-link link flex">
+                                        <img src="./img/for-baby-icon.png" alt="">
+                                        <span>Mẹ và bé</span>
+                                    </a>
+                                 </li>
+                                 <li class="header-menu-item_drop-item">
+                                    <a href="" class="header-menu-item_drop-item-link link flex">
+                                        <img src="./img/tecnology-icon.png" alt="">
+                                        <span>Phụ kiện công nghệ</span>
+                                    </a>
+                                 </li>
+                                 <li class="header-menu-item_drop-item">
+                                    <a href="" class="header-menu-item_drop-item-link link flex">
+                                        <img src="./img/laptop-icon.png" alt="">
+                                        <span>Laptop</span>
+                                    </a>
+                                 </li>
+                                 <li class="header-menu-item_drop-item">
+                                    <a href="" class="header-menu-item_drop-item-link link flex">
+                                        <img src="./img/ring-icon.png" alt="">
+                                        <span>Trang sức</span>
+                                    </a>
+                                 </li>
+                                 <li class="header-menu-item_drop-item">
+                                    <a href="" class="header-menu-item_drop-item-link link flex">
+                                        <img src="./img/cold-electric-icon.png" alt="">
+                                        <span>Điện lạnh</span>
+                                    </a>
+                                 </li>
+                                 <li class="header-menu-item_drop-item">
+                                    <a href="" class="header-menu-item_drop-item-link link flex">
+                                        <img src="./img/photo-icon.png" alt="">
+                                        <span>Máy ảnh</span>
+                                    </a>
+                                 </li>
+                            </ul>
+                        </li>
+                    </ul>
+        
+                    <ul class="header-menu-list no-display-mobile">
+                        <li class="header-menu-item">
+                            <a href="" class="header-menu-link link">Trang chủ</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="" class="header-menu-link link">Giới thiệu</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="" class="header-menu-link link">Sản phẩm</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="" class="header-menu-link link">Tin tức</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a href="" class="header-menu-link link">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header-menu-list-nav_responsive no-display-pc no-display-tablet">
+                        <div class="header-menu-list-nav-main_responsive">
+                            <span class="header-menu-list-nav-main-header_responsive">MENU</span>
+                            <label for="checkbox-menu-drop"><i class="fas fa-align-justify header-menu-list-nav-main-icon_responsive"></i></label>
+                        </div>
+                        <input type="checkbox" id="checkbox-menu-drop" class="checkbox-menu-drop" style="display: none;">
+                        <div class="header-menu-list-nav-drop_responsive">
+                            <li class="header-menu-list-nav-drop-item_responsive">
+                                <a href="" class="header-menu-list-nav-drop-item-link_responsive">Trang chủ</a>
+                            </li>
+                            <li class="header-menu-list-nav-drop-item_responsive">
+                                <a href="" class="header-menu-list-nav-drop-item-link_responsive">Giới thiệu</a>
+                            </li>
+                            <li class="header-menu-list-nav-drop-item_responsive">
+                                <a href="" class="header-menu-list-nav-drop-item-link_responsive">Sản phẩm</a>
+                            </li>
+                            <li class="header-menu-list-nav-drop-item_responsive">
+                                <a href="" class="header-menu-list-nav-drop-item-link_responsive">Tin tức</a>
+                            </li>
+                            <li class="header-menu-list-nav-drop-item_responsive">
+                                <a href="" class="header-menu-list-nav-drop-item-link_responsive">Liên hệ</a>
+                            </li>
+                        </div>
+                    </ul>                 
+                    <ul class="header-menu-list_responsive">
+                        <input type="checkbox" id="checkbox-2" class="checkbox-2" style="display: none;">
+                        <label for="checkbox-2" style="cursor: pointer;"><i class="fas fa-align-justify header-menu-list-item_responsive"></i></label>
+                        <ul class="header-menu-list-drop-right_responsive">
+                            <li class="header-menu-list-drop-right-item_responsive">
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Thời trang</a>
+                                <img src="./img/fashion-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                            <li class="header-menu-list-drop-right-item_responsive ">
+                                
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Điện thoại & Ipad</a>
+                                <img src="./img/phone-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                            <li class="header-menu-list-drop-right-item_responsive ">
+                                
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Mỹ phẩm</a>
+                                <img src="./img/slip-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                            <li class="header-menu-list-drop-right-item_responsive ">
+                                
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Thể thao</a>
+                                <img src="./img/sport-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                            <li class="header-menu-list-drop-right-item_responsive ">
+                                
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Mẹ và bé</a>
+                                <img src="./img/for-baby-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                            <li class="header-menu-list-drop-right-item_responsive ">
+                                
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Phụ kiện công nghệ</a>
+                                <img src="./img/tecnology-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                            <li class="header-menu-list-drop-right-item_responsive ">
+                                
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Laptop</a>
+                                <img src="./img/laptop-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                            <li class="header-menu-list-drop-right-item_responsive ">
+                                
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Trang sức</a>
+                                <img src="./img/ring-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                            <li class="header-menu-list-drop-right-item_responsive ">
+                                
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Điện lạnh</a>
+                                <img src="./img/cold-electric-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                            <li class="header-menu-list-drop-right-item_responsive ">
+                                
+                                <a href="" class="header-menu-list-drop-right-item-link_responsive header-menu-list-drop-right-item-mini_responsive">Máy ảnh</a>
+                                <img src="./img/photo-icon.png" class="header-menu-list-drop-right-item-mini-img_responsive" alt="">
+                            </li>
+                        </ul>
+                        
+                    </ul>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <a href="#header" class="link">
+        <div class="btn-back-to-top">
+            <i class="fas fa-angle-up btn-back-to-top_icon"></i>
+        </div>
+    </a>
+    <div class="container">
+        <div class="grid wide">
+            <div class="container-main">
+                <div class="container-main-left  no-display-mobile-tablet">
+                    <img src="./img/even-ps.png" alt="">
+                </div>
+                <div class="container-main-banner-slide">
+                    <a href="" class="link container-main-banner-slide-img_link"><img src="./img/banner-slide-1.jpg" alt="" class="container-main-banner-slide-img"></a>
+                    <button class="container-main-banner-slide-btn banner-slide-btn-left no-display-tablet">
+                        <i class="fas fa-caret-left banner-slide-btn-right_icon"></i></a>
+                    </button>
+                    <button class="container-main-banner-slide-btn banner-slide-btn-right no-display-tablet">
+                        <i class="fas fa-caret-right banner-slide-btn-right_icon"></i>
+                    </button>
+                    <div class="container-main-banner-slide-number no-display-mobile">
+                        <div class="banner-slide-number">1</div>
+                        <div class="banner-slide-number">2</div>
+                        <div class="banner-slide-number">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-promotional-products">
+        <div class="grid wide">
+            <div class="promotional-products">
+                <div class="promotional-products-header">
+                    <h2 class="promotional-products-header-text">SẢN PHẨM KHUYẾN MÃI</h2>
+                    <div class="promotional-products-header-btn">
+                        <button class="promotional-products-header-btn-select">
+                            <i class="fas fa-chevron-left promotional-products-btn-select_left"></i>
+                        </button>
+                        <button class="promotional-products-header-btn-select">
+                            <i class="fas fa-chevron-right promotional-products-btn-select_right"></i>
+                        </button>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col c-12 l-2-4 m-4">
+                            <div class="products">
+                                <div class="products-img">
+                                    <a href="" class="link products-img-picture"><img src="./img/dam-body-ca-tinh-nhieu-mau-sac-hien-dai-tre-trung.jpg" alt=""></a>
+                                    <a href="" class="link">
+                                        <div class="products-img-add-card">
+                                            <div class="products-img-add-card-icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                            <span class="products-img-add-card-text">
+                                                Thêm vào giỏ
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <div class="products-img-tool">
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-add-to-favorite">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-see-detail">
+                                                <i class="fas fa-compress-alt"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-look-fast">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products-img-sale-off">
+                                        <span>Sale -35%</span>
+                                    </div>
+                                </div>
+                                <div class="products-title">
+                                    <div class="products-title-name">
+                                        <a href="" title="Đầm body cá tính với nhiều màu sắc hiện đại, trẻ trung" class="link products-title-name-text">
+                                            Đầm body cá tính với nhiều màu sắc hiện đại, trẻ trung
+                                        </a>
+                                    </div>
+                                    <div class="products-title-money">
+                                        <span class="products-title-money-discount">
+                                            400,000 ₫
+                                        </span>
+                                        <span class="products-title-money-cost">
+                                            620,000 ₫
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4">
+                            <div class="products">
+                                <div class="products-img">
+                                    <a href="" class="link"><img src="./img/promotional-products-img-2.jpg" alt=""></a>
+                                    <a href="" class="link">
+                                        <div class="products-img-add-card">
+                                            <div class="products-img-add-card-icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                            <span class="products-img-add-card-text">
+                                                Thêm vào giỏ
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <div class="products-img-tool">
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-add-to-favorite">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-see-detail">
+                                                <i class="fas fa-compress-alt"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-look-fast">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products-img-sale-off">
+                                        <span>Sale -21%</span>
+                                    </div>
+                                </div>
+                                <div class="products-title">
+                                    <div class="products-title-name">
+                                        <a href="" title="Đầm body cá tính với nhiều màu sắc hiện đại, trẻ trung" class="link products-title-name-text">
+                                            Đầm maxi dự tiệc hoa hồng - NH028
+                                        </a>
+                                    </div>
+                                    <div class="products-title-money">
+                                        <span class="products-title-money-discount">
+                                            190,000 ₫
+                                        </span>
+                                        <span class="products-title-money-cost">
+                                            240,000 ₫
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4">
+                            <div class="products">
+                                <div class="products-img">
+                                    <a href="" class="link"><img src="./img/promotional-products-img-3.jpg" alt=""></a>
+                                    <a href="" class="link">
+                                        <div class="products-img-add-card">
+                                            <div class="products-img-add-card-icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                            <span class="products-img-add-card-text">
+                                                Thêm vào giỏ
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <div class="products-img-tool">
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-add-to-favorite">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-see-detail">
+                                                <i class="fas fa-compress-alt"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-look-fast">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products-img-sale-off">
+                                        <span>Sale -45%</span>
+                                    </div>
+                                </div>
+                                <div class="products-title">
+                                    <div class="products-title-name">
+                                        <a href="" title="Đầm body cá tính với nhiều màu sắc hiện đại, trẻ trung" class="link products-title-name-text">
+                                            Đầm body lập thể tay dài
+                                        </a>
+                                    </div>
+                                    <div class="products-title-money">
+                                        <span class="products-title-money-discount">
+                                            310,000 ₫
+                                        </span>
+                                        <span class="products-title-money-cost">
+                                            560,000 ₫
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4">
+                            <div class="products">
+                                <div class="products-img">
+                                    <a href="" class="link"><img src="./img/promotional-products-img-4.jpg" alt=""></a>
+                                    <a href="" class="link">
+                                        <div class="products-img-add-card">
+                                            <div class="products-img-add-card-icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                            <span class="products-img-add-card-text">
+                                                Thêm vào giỏ
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <div class="products-img-tool">
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-add-to-favorite">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-see-detail">
+                                                <i class="fas fa-compress-alt"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-look-fast">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products-img-sale-off">
+                                        <span>Sale -32%</span>
+                                    </div>
+                                </div>
+                                <div class="products-title">
+                                    <div class="products-title-name">
+                                        <a href="" title="Đầm body cá tính với nhiều màu sắc hiện đại, trẻ trung" class="link products-title-name-text">
+                                            Đầm mặc nhà tay lỡ NITIMO 2001
+                                        </a>
+                                    </div>
+                                    <div class="products-title-money">
+                                        <span class="products-title-money-discount">
+                                            190,000 ₫
+                                        </span>
+                                        <span class="products-title-money-cost">
+                                            280,000 ₫
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-4">
+                            <div class="products">
+                                <div class="products-img">
+                                    <a href="" class="link"><img src="./img/promotional-products-img-5.jpg" alt=""></a>
+                                    <a href="" class="link">
+                                        <div class="products-img-add-card">
+                                            <div class="products-img-add-card-icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+                                            <span class="products-img-add-card-text">
+                                                Thêm vào giỏ
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <div class="products-img-tool">
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-add-to-favorite">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-see-detail">
+                                                <i class="fas fa-compress-alt"></i>
+                                            </div>
+                                        </a>
+                                        <a href="" class="link">
+                                            <div class="products-img-tool-icon products-img-look-fast">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products-img-sale-off">
+                                        <span>Sale -12%</span>
+                                    </div>
+                                </div>
+                                <div class="products-title">
+                                    <div class="products-title-name">
+                                        <a href="" title="Đầm body cá tính với nhiều màu sắc hiện đại, trẻ trung" class="link products-title-name-text">
+                                            Giày Tennis T19 xanh
+                                        </a>
+                                    </div>
+                                    <div class="products-title-money">
+                                        <span class="products-title-money-discount">
+                                            790,000 ₫
+                                        </span>
+                                        <span class="products-title-money-cost">
+                                            900,000 ₫
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-products">
+        <!-- main product 1 -->
+        <div class="products-main-1">
+            <div class="grid wide">
+                <div class="products-main-1-body">
+                    <div class="products-main-1-header">
+                        <i class="fas fa-shopping-bag products-main-1-header_icon-shop"></i>
+                        <h1 class="products-main-1-header_text">
+                            <a href="" class="link products-main-1-header_text-link" id="product-1">
+                                THỜI TRANG
+                            </a>
+                        </h1>
+                        <i class="fas fa-chevron-right products-main-1-header_icon-right"></i>
+                    </div>
+                    <div class="products-main-1-menu">
+                        <ul class="products-main-1-menu-list">
+                            <li class="products-main-1-menu-list-item">
+                                <div class="products-main-1-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-1-menu-list-item-link link">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="products-main-1-menu-list-item">
+                                <div class="products-main-1-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-1-menu-list-item-link link">Áo sơ mi</a>
+                            </li>
+                            <li class="products-main-1-menu-list-item">
+                                <div class="products-main-1-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-1-menu-list-item-link link">Áo khoác</a>
+                            </li>
+                            <li class="products-main-1-menu-list-item">
+                                <div class="products-main-1-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-1-menu-list-item-link link">Áo thun</a>
+                            </li>
+                            <li class="products-main-1-menu-list-item">
+                                <div class="products-main-1-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-1-menu-list-item-link link">Đầm, váy nữ</a>
+                            </li>
+                            <li class="products-main-1-menu-list-item">
+                                <div class="products-main-1-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-1-menu-list-item-link link">Chân váy</a>
+                            </li>
+                            <li class="products-main-1-menu-list-item">
+                                <div class="products-main-1-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-1-menu-list-item-link link">Đồ lót, đồ ngủ</a>
+                            </li>
+                            <li class="products-main-1-menu-list-item">
+                                <div class="products-main-1-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-1-menu-list-item-link link">Đồ bơi</a>
+                            </li>
+                            <li class="products-main-1-menu-list-item">
+                                <div class="products-main-1-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-1-menu-list-item-link link">Phụ kiện</a>
+                            </li>
+                        </ul>
+                        <div class="products-main-1-menu-list-scroll">
+                            <div><i class="fas fa-angle-up products-main-1-menu-list-scroll_item no-active-btn"></i></div>
+                            <a href="#product-2"><i class="fas fa-angle-down products-main-1-menu-list-scroll_item"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-main-1-content">
+                    <div class="products-main-1-content_menu-left">
+                            <ul class="products-main-1-content_menu-left-list">
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Áo sơ mi</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Áo khoác</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Áo thun</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Quần tây công sở</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Quần jean</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Đầm, váy nữ</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Chân váy</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Quần kaki nam</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Áo vest, blazer nam</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Quần shorts nam</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Đồ lót, đồ ngủ</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Quần thời trang</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Quần legging</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Trang phục cưới</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Đồ bơi</a>
+                                </li>
+                                <li class="products-main-1-content_menu-left-list-item">
+                                    <a href="" class="products-main-1-content_menu-left-item-link">Phụ kiện</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="products-main-1-content_banner no-display-tablet">
+                        <a href="" class="link"><img src="./img/banner-1.png" alt="" class="products-main-1-content_banner-img"></a>
+                        <a href="" class="link">
+                            <div class="products-main-1-content_border">
+                                <div class="products-main-1-content_border-top"></div>
+                                <div class="products-main-1-content_border-right"></div>
+                                <div class="products-main-1-content_border-bottom"></div>
+                                <div class="products-main-1-content_border-left"></div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="products-main-1-content_product">
+                        <div class="products-main-1-content_product-1">
+                            <div class="products-main-1-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-1-content_product-1_item-header">Đầm body cá tính với nhiều máu sắc hiện đại</div></a>
+                                <div class="products-main-1-content_product-1_item-money">
+                                    <div class="products-main-1-content_product-1_item-money-price">400.000₫</div>
+                                    <div class="products-main-1-content_product-1_item-money-discount">620.000₫</div>
+                                </div>
+                                <div class="products-main-1-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-1-content_product-1_item-img-picture" src="./img/dam-body-ca-tinh-nhieu-mau-sac-hien-dai-tre-trung.jpg" alt=""></a>
+                                    <div class="products-main-1-content_product-1_item-img-tool">
+                                            <div class="products-main-1-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-1-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-1-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-1-content_product-1_item-add-to-card">
+                                    <div class="products-main-1-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-1-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-1-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-1-content_product-1_item-header">Đầm maxi dự tiệc hoa hồng - NH028</div></a>
+                                <div class="products-main-1-content_product-1_item-money">
+                                    <div class="products-main-1-content_product-1_item-money-price">190.000₫</div>
+                                    <div class="products-main-1-content_product-1_item-money-discount">240.000₫</div>
+                                </div>
+                                <div class="products-main-1-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-1-content_product-1_item-img-picture" src="./img/main-product-fashion-2.jpg" alt=""></a>
+                                    <div class="products-main-1-content_product-1_item-img-tool">
+                                            <div class="products-main-1-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-1-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-1-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-1-content_product-1_item-add-to-card">
+                                    <div class="products-main-1-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-1-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-1-content_product-1_item no-border">
+                                <a href="" class="link"><div class="products-main-1-content_product-1_item-header">Đầm body lập thể tay dài</div></a>
+                                <div class="products-main-1-content_product-1_item-money">
+                                    <div class="products-main-1-content_product-1_item-money-price">310.000₫</div>
+                                    <div class="products-main-1-content_product-1_item-money-discount">560.000₫</div>
+                                </div>
+                                <div class="products-main-1-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-1-content_product-1_item-img-picture" src="./img/main-product-fashion-3.jpg" alt=""></a>
+                                    <div class="products-main-1-content_product-1_item-img-tool">
+                                            <div class="products-main-1-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-1-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-1-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-1-content_product-1_item-add-to-card">
+                                    <div class="products-main-1-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-1-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product 2 -->
+                        <div class="products-main-1-content_product-2">
+                            <div class="products-main-1-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-1-content_product-2_item-header">Đầm mặc nhà tay lỡ NITIMO 2001</div></a>
+                                <div class="products-main-1-content_product-2_item-money">
+                                    <div class="products-main-1-content_product-2_item-money-price">190.000₫</div>
+                                    <div class="products-main-1-content_product-2_item-money-discount">280.000₫</div>
+                                </div>
+                                <div class="products-main-1-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-1-content_product-2_item-img-picture" src="./img/main-product-fashion-4.jpg" alt=""></a>
+                                    <div class="products-main-1-content_product-2_item-img-tool">
+                                            <div class="products-main-1-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-1-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-1-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-1-content_product-2_item-add-to-card">
+                                    <div class="products-main-1-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-1-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-1-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-1-content_product-2_item-header">Đầm mặc nhà phối nơ xinh xắn Twins</div></a>
+                                <div class="products-main-1-content_product-2_item-money">
+                                    <div class="products-main-1-content_product-2_item-money-price">2.400.000₫</div>
+                                </div>
+                                <div class="products-main-1-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-1-content_product-2_item-img-picture" src="./img/main-product-fashion-5.jpg" alt=""></a>
+                                    <div class="products-main-1-content_product-2_item-img-tool">
+                                            <div class="products-main-1-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-1-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-1-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-1-content_product-2_item-add-to-card">
+                                    <div class="products-main-1-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-1-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-1-content_product-2_item no-border">
+                                <a href="" class="link"><div class="products-main-1-content_product-2_item-header">Đầm dạo phố họa tiết style - A1</div></a>
+                                <div class="products-main-1-content_product-2_item-money">
+                                    <div class="products-main-1-content_product-2_item-money-price">220.000₫</div>
+                                </div>
+                                <div class="products-main-1-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-1-content_product-2_item-img-picture" src="./img/main-product-fashion-6.jpg" alt=""></a>
+                                    <div class="products-main-1-content_product-2_item-img-tool">
+                                            <div class="products-main-1-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-1-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-1-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-1-content_product-2_item-add-to-card">
+                                    <div class="products-main-1-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-1-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main 2 -->
+        <div class="products-main-2">
+            <div class="grid wide">
+                <div class="products-main-2-body">
+                    <div class="products-main-2-header">
+                        <i class="fas fa-futbol products-main-1-header_icon-shop"></i>
+                        <h1 class="products-main-2-header_text">
+                            <a href="" class="link products-main-2-header_text-link" id="product-2">
+                                THỂ THAO
+                            </a>
+                        </h1>
+                        <i class="fas fa-chevron-right products-main-2-header_icon-right"></i>
+                    </div>
+                    <div class="products-main-2-menu">
+                        <ul class="products-main-2-menu-list">
+                            <li class="products-main-2-menu-list-item">
+                                <div class="products-main-2-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-2-menu-list-item-link link">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="products-main-2-menu-list-item">
+                                <div class="products-main-2-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-2-menu-list-item-link link">Bóng đá</a>
+                            </li>
+                            <li class="products-main-2-menu-list-item">
+                                <div class="products-main-2-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-2-menu-list-item-link link">Tennis</a>
+                            </li>
+                            <li class="products-main-2-menu-list-item">
+                                <div class="products-main-2-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-2-menu-list-item-link link">Quần tập gym</a>
+                            </li>
+                            <li class="products-main-2-menu-list-item">
+                                <div class="products-main-2-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-2-menu-list-item-link link">Máy tập thể thao</a>
+                            </li>
+                            <li class="products-main-2-menu-list-item">
+                                <div class="products-main-2-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-2-menu-list-item-link link">Giày thể thao</a>
+                            </li>
+                            <li class="products-main-2-menu-list-item">
+                                <div class="products-main-2-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-2-menu-list-item-link link">Áo thể thao</a>
+                            </li>
+                        </ul>
+                        <div class="products-main-2-menu-list-scroll">
+                            <a href="#product-1"><i class="fas fa-angle-up products-main-2-menu-list-scroll_item"></i></a>
+                            <a href="#product-3"><i class="fas fa-angle-down products-main-2-menu-list-scroll_item"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-main-2-content">
+                    <div class="products-main-2-content_menu-left">
+                            <ul class="products-main-2-content_menu-left-list">
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Bóng đá</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Bóng chuyền</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Bóng bàn</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Bóng chày</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Tennis</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Bơi lội</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Cầu lông</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Áo thể thao tập gym</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Quần tập gym</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Máy tập thể thao</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Giày thể thao</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Mũ thể thao</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Áo khoác thể thao</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Áo thể thao</a>
+                                </li>
+                                <li class="products-main-2-content_menu-left-list-item">
+                                    <a href="" class="products-main-2-content_menu-left-item-link">Túi đựng đồ</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="products-main-2-content_banner no-display-tablet">
+                        <a href="" class="link"><img src="./img/main-product-sport-banner.png" alt="" class="products-main-2-content_banner-img"></a>
+                        <a href="" class="link">
+                            <div class="products-main-2-content_border">
+                                <div class="products-main-2-content_border-top"></div>
+                                <div class="products-main-2-content_border-right"></div>
+                                <div class="products-main-2-content_border-bottom"></div>
+                                <div class="products-main-2-content_border-left"></div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="products-main-2-content_product">
+                        <div class="products-main-2-content_product-1">
+                            <div class="products-main-2-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-2-content_product-1_item-header">Giày Tennis T19 xanh</div></a>
+                                <div class="products-main-2-content_product-1_item-money">
+                                    <div class="products-main-2-content_product-1_item-money-price">790.000₫</div>
+                                    <div class="products-main-2-content_product-1_item-money-discount">900.000₫</div>
+                                </div>
+                                <div class="products-main-2-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-2-content_product-1_item-img-picture" src="./img/main-product-sport-1.jpg" alt=""></a>
+                                    <div class="products-main-2-content_product-1_item-img-tool">
+                                            <div class="products-main-2-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-2-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-2-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-2-content_product-1_item-add-to-card">
+                                    <div class="products-main-2-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-2-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-2-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-2-content_product-1_item-header">Mũ Tennis Puma w's cat performance visor 908279</div></a>
+                                <div class="products-main-2-content_product-1_item-money">
+                                    <div class="products-main-2-content_product-1_item-money-price">520.000₫</div>
+                                </div>
+                                <div class="products-main-2-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-2-content_product-1_item-img-picture" src="./img/main-product-sport-2.jpg" alt=""></a>
+                                    <div class="products-main-2-content_product-1_item-img-tool">
+                                            <div class="products-main-2-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-2-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-2-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-2-content_product-1_item-add-to-card">
+                                    <div class="products-main-2-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-2-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-2-content_product-1_item no-border">
+                                <a href="" class="link"><div class="products-main-2-content_product-1_item-header">Áo tennis nam Donexpro MC-8882-X (Xanh)</div></a>
+                                <div class="products-main-2-content_product-1_item-money">
+                                    <div class="products-main-2-content_product-1_item-money-price">299.000₫</div>
+                                </div>
+                                <div class="products-main-2-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-2-content_product-1_item-img-picture" src="./img/main-product-sport-3.jpg" alt=""></a>
+                                    <div class="products-main-2-content_product-1_item-img-tool">
+                                            <div class="products-main-2-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-2-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-2-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-2-content_product-1_item-add-to-card">
+                                    <div class="products-main-2-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-2-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product 2 -->
+                        <div class="products-main-2-content_product-2">
+                            <div class="products-main-2-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-2-content_product-2_item-header">Vợt tennis Wilson Pro Staff 97 LS WRT7250102</div></a>
+                                <div class="products-main-2-content_product-2_item-money">
+                                    <div class="products-main-2-content_product-2_item-money-price">4.150.000₫</div>
+                                    <div class="products-main-2-content_product-2_item-money-discount">6.400.000₫</div>
+                                </div>
+                                <div class="products-main-2-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-2-content_product-2_item-img-picture" src="./img/main-product-sport-4.jpg" alt=""></a>
+                                    <div class="products-main-2-content_product-2_item-img-tool">
+                                            <div class="products-main-2-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-2-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-2-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-2-content_product-2_item-add-to-card">
+                                    <div class="products-main-2-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-2-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-2-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-2-content_product-2_item-header">Áo tennis nữDonexpro MC-8882-X (Đen)</div></a>
+                                <div class="products-main-2-content_product-2_item-money">
+                                    <div class="products-main-2-content_product-2_item-money-price">199.000₫</div>
+                                </div>
+                                <div class="products-main-2-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-2-content_product-2_item-img-picture" src="./img/main-product-sport-5.jpg" alt=""></a>
+                                    <div class="products-main-2-content_product-2_item-img-tool">
+                                            <div class="products-main-2-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-2-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-2-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-2-content_product-2_item-add-to-card">
+                                    <div class="products-main-2-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-2-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-2-content_product-2_item no-border">
+                                <a href="" class="link"><div class="products-main-2-content_product-2_item-header">Túi đựng đồ, dụng cụng thể thao K300</div></a>
+                                <div class="products-main-2-content_product-2_item-money">
+                                    <div class="products-main-2-content_product-2_item-money-price">120.000₫</div>
+                                </div>
+                                <div class="products-main-2-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-2-content_product-2_item-img-picture" src="./img/main-product-sport-6.jpg" alt=""></a>
+                                    <div class="products-main-2-content_product-2_item-img-tool">
+                                            <div class="products-main-2-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-2-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-2-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-2-content_product-2_item-add-to-card">
+                                    <div class="products-main-2-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-2-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main product 3 -->
+        <div class="products-main-3">
+            <div class="grid wide">
+                <div class="products-main-3-body">
+                    <div class="products-main-3-header">
+                        <i class="far fa-gem products-main-1-header_icon-shop"></i>
+                        <h1 class="products-main-3-header_text">
+                            <a href="" class="link products-main-3-header_text-link" id="product-3">
+                                TRANG SỨC
+                            </a>
+                        </h1>
+                        <i class="fas fa-chevron-right products-main-3-header_icon-right"></i>
+                    </div>
+                    <div class="products-main-3-menu">
+                        <ul class="products-main-3-menu-list">
+                            <li class="products-main-3-menu-list-item">
+                                <div class="products-main-3-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-3-menu-list-item-link link">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="products-main-3-menu-list-item">
+                                <div class="products-main-3-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-3-menu-list-item-link link">Trang sức cưới</a>
+                            </li>
+                            <li class="products-main-3-menu-list-item">
+                                <div class="products-main-3-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-3-menu-list-item-link link">Trang sức vàng</a>
+                            </li>
+                            <li class="products-main-3-menu-list-item">
+                                <div class="products-main-3-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-3-menu-list-item-link link">Nhẫn đính hôn</a>
+                            </li>
+                            <li class="products-main-3-menu-list-item">
+                                <div class="products-main-3-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-3-menu-list-item-link link">Mặt đá quý</a>
+                            </li>
+                            <li class="products-main-3-menu-list-item">
+                                <div class="products-main-3-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-3-menu-list-item-link link">Ngọc trai</a>
+                            </li>
+                            <li class="products-main-3-menu-list-item">
+                                <div class="products-main-3-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-3-menu-list-item-link link">Vòng cổ</a>
+                            </li>
+                            <li class="products-main-3-menu-list-item">
+                                <div class="products-main-3-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-3-menu-list-item-link link">Bông tai</a>
+                            </li>
+                        </ul>
+                        <div class="products-main-3-menu-list-scroll">
+                            <a href="#product-2"><i class="fas fa-angle-up products-main-3-menu-list-scroll_item"></i></a>
+                            <a href="#product-4"><i class="fas fa-angle-down products-main-3-menu-list-scroll_item"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-main-3-content">
+                    <div class="products-main-3-content_menu-left">
+                            <ul class="products-main-3-content_menu-left-list">
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Trang sức cưới</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Trang sức vàng</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Trang sức kim cương</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Nhẫn đính hôn</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Mặt đá quý</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Ngọc trai</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Trang sức CZ</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Trang sức Italy</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Trang sức Jemma</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Vòng tay</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Vòng cổ</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Bông tai</a>
+                                </li>
+                                <li class="products-main-3-content_menu-left-list-item">
+                                    <a href="" class="products-main-3-content_menu-left-item-link">Lắc tay, chân</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="products-main-3-content_banner no-display-tablet">
+                        <a href="" class="link"><img src="./img/main-product-jewelry-banner.png" alt="" class="products-main-3-content_banner-img"></a>
+                        <a href="" class="link">
+                            <div class="products-main-3-content_border">
+                                <div class="products-main-3-content_border-top"></div>
+                                <div class="products-main-3-content_border-right"></div>
+                                <div class="products-main-3-content_border-bottom"></div>
+                                <div class="products-main-3-content_border-left"></div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="products-main-3-content_product">
+                        <div class="products-main-3-content_product-1">
+                            <div class="products-main-3-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-3-content_product-1_item-header">Mặt dây hiện đại, sang trọng 20-</div></a>
+                                <div class="products-main-3-content_product-1_item-money">
+                                    <div class="products-main-3-content_product-1_item-money-price">11.200.000₫</div>
+                                    <div class="products-main-3-content_product-1_item-money-discount">14.000.000₫</div>
+                                </div>
+                                <div class="products-main-3-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-3-content_product-1_item-img-picture" src="./img/main-product-jewelry-1.jpg" alt=""></a>
+                                    <div class="products-main-3-content_product-1_item-img-tool">
+                                            <div class="products-main-3-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-3-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-3-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-3-content_product-1_item-add-to-card">
+                                    <div class="products-main-3-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-3-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-3-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-3-content_product-1_item-header">Nhẫn nữ 085-1014R7054VC1</div></a>
+                                <div class="products-main-3-content_product-1_item-money">
+                                    <div class="products-main-3-content_product-1_item-money-price">55.000.000₫</div>
+                                </div>
+                                <div class="products-main-3-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-3-content_product-1_item-img-picture" src="./img/main-product-jewelry-2.jpg" alt=""></a>
+                                    <div class="products-main-3-content_product-1_item-img-tool">
+                                            <div class="products-main-3-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-3-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-3-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-3-content_product-1_item-add-to-card">
+                                    <div class="products-main-3-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-3-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-3-content_product-1_item no-border">
+                                <a href="" class="link"><div class="products-main-3-content_product-1_item-header">Nhẫn nữ 1210R4455A2</div></a>
+                                <div class="products-main-3-content_product-1_item-money">
+                                    <div class="products-main-3-content_product-1_item-money-price">33.000.000₫</div>
+                                    <div class="products-main-3-content_product-1_item-money-discount">37.000.000₫</div>
+                                </div>
+                                <div class="products-main-3-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-3-content_product-1_item-img-picture" src="./img/main-product-jewelry-3.jpg" alt=""></a>
+                                    <div class="products-main-3-content_product-1_item-img-tool">
+                                            <div class="products-main-3-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-3-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-3-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-3-content_product-1_item-add-to-card">
+                                    <div class="products-main-3-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-3-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product 2 -->
+                        <div class="products-main-3-content_product-2">
+                            <div class="products-main-3-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-3-content_product-2_item-header">Nhẫn nữ 1211R0018BM</div></a>
+                                <div class="products-main-3-content_product-2_item-money">
+                                    <div class="products-main-3-content_product-2_item-money-price">75.000.000₫</div>
+                                </div>
+                                <div class="products-main-3-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-3-content_product-2_item-img-picture" src="./img/main-product-jewelry-4.jpg" alt=""></a>
+                                    <div class="products-main-3-content_product-2_item-img-tool">
+                                            <div class="products-main-3-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-3-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-3-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-3-content_product-2_item-add-to-card">
+                                    <div class="products-main-3-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-3-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-3-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-3-content_product-2_item-header">Kiềng cổ 0109N7009PUN1</div></a>
+                                <div class="products-main-3-content_product-2_item-money">
+                                    <div class="products-main-3-content_product-2_item-money-price">1.300.000.000₫</div>
+                                </div>
+                                <div class="products-main-3-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-3-content_product-2_item-img-picture" src="./img/main-product-jewelry-5.jpg" alt=""></a>
+                                    <div class="products-main-3-content_product-2_item-img-tool">
+                                            <div class="products-main-3-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-3-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-3-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-3-content_product-2_item-add-to-card">
+                                    <div class="products-main-3-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-3-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-3-content_product-2_item no-border">
+                                <a href="" class="link"><div class="products-main-3-content_product-2_item-header">Nhẫn nữ 107R8044BM</div></a>
+                                <div class="products-main-3-content_product-2_item-money">
+                                    <div class="products-main-3-content_product-2_item-money-price">33.000.000₫</div>
+                                </div>
+                                <div class="products-main-3-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-3-content_product-2_item-img-picture" src="./img/main-product-jewelry-6.jpg" alt=""></a>
+                                    <div class="products-main-3-content_product-2_item-img-tool">
+                                            <div class="products-main-3-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-3-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-3-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-3-content_product-2_item-add-to-card">
+                                    <div class="products-main-3-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-3-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main product 4 -->
+        <div class="products-main-4">
+            <div class="grid wide">
+                <div class="products-main-4-body">
+                    <div class="products-main-4-header">
+                        <i class="fas fa-microchip products-main-1-header_icon-shop"></i>
+                        <h1 class="products-main-4-header_text">
+                            <a href="" class="link products-main-4-header_text-link" id="product-4">
+                                ĐIỆN LẠNH
+                            </a>
+                        </h1>
+                        <i class="fas fa-chevron-right products-main-4-header_icon-right"></i>
+                    </div>
+                    <div class="products-main-4-menu">
+                        <ul class="products-main-4-menu-list">
+                            <li class="products-main-4-menu-list-item">
+                                <div class="products-main-4-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-4-menu-list-item-link link">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="products-main-4-menu-list-item">
+                                <div class="products-main-4-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-4-menu-list-item-link link">Bếp gas</a>
+                            </li>
+                            <li class="products-main-4-menu-list-item">
+                                <div class="products-main-4-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-4-menu-list-item-link link">Bếp điện</a>
+                            </li>
+                            <li class="products-main-4-menu-list-item">
+                                <div class="products-main-4-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-4-menu-list-item-link link">Máy lạnh</a>
+                            </li>
+                            <li class="products-main-4-menu-list-item">
+                                <div class="products-main-4-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-4-menu-list-item-link link">Máy giặt</a>
+                            </li>
+                            <li class="products-main-4-menu-list-item">
+                                <div class="products-main-4-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-4-menu-list-item-link link">Máy xay sinh tố</a>
+                            </li>
+                            <li class="products-main-4-menu-list-item">
+                                <div class="products-main-4-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-4-menu-list-item-link link">Máy ép trái cây</a>
+                            </li>
+                        </ul>
+                        <div class="products-main-4-menu-list-scroll">
+                            <a href="#product-3"><i class="fas fa-angle-up products-main-4-menu-list-scroll_item"></i></a>
+                            <a href="#product-5"><i class="fas fa-angle-down products-main-4-menu-list-scroll_item"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-main-4-content">
+                    <div class="products-main-4-content_menu-left">
+                            <ul class="products-main-4-content_menu-left-list">
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Nồi cơm điện</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Nồi áp suất</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Nồi đa năng</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Bếp gas</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Bếp điện</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Lò vi sóng</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Máy lạnh</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Máy giặt</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Tủ lạnh</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Tủ đông</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Máy lọc nước</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Lẩu điện đa năng</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Máy xay sinh tố</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Máy ép trái cây</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Máy sấy chén</a>
+                                </li>
+                                <li class="products-main-4-content_menu-left-list-item">
+                                    <a href="" class="products-main-4-content_menu-left-item-link">Lò nướng, vĩ nướng</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="products-main-4-content_banner no-display-tablet">
+                        <a href="" class="link"><img src="./img/main-product-refrigeration-banner.png" alt="" class="products-main-4-content_banner-img"></a>
+                        <a href="" class="link">
+                            <div class="products-main-4-content_border">
+                                <div class="products-main-4-content_border-top"></div>
+                                <div class="products-main-4-content_border-right"></div>
+                                <div class="products-main-4-content_border-bottom"></div>
+                                <div class="products-main-4-content_border-left"></div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="products-main-4-content_product">
+                        <div class="products-main-4-content_product-1">
+                            <div class="products-main-4-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-4-content_product-1_item-header">Nồi Cơm Điện Tử PHILIPS HD3130</div></a>
+                                <div class="products-main-4-content_product-1_item-money">
+                                    <div class="products-main-4-content_product-1_item-money-price">1.705.000₫</div>
+                                    <div class="products-main-4-content_product-1_item-money-discount">1.900.000₫</div>
+                                </div>
+                                <div class="products-main-4-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-4-content_product-1_item-img-picture" src="./img/main-product-refrigeration-1.jpg" alt=""></a>
+                                    <div class="products-main-4-content_product-1_item-img-tool">
+                                            <div class="products-main-4-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-4-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-4-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-4-content_product-1_item-add-to-card">
+                                    <div class="products-main-4-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-4-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-4-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-4-content_product-1_item-header">Nồi Cơm Điện PANASONIC SR-</div></a>
+                                <div class="products-main-4-content_product-1_item-money">
+                                    <div class="products-main-4-content_product-1_item-money-price">1.250.000₫</div>
+                                    <div class="products-main-4-content_product-1_item-money-discount">1.545.000₫</div>
+                                </div>
+                                <div class="products-main-4-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-4-content_product-1_item-img-picture" src="./img/main-product-refrigeration-2.jpg" alt=""></a>
+                                    <div class="products-main-4-content_product-1_item-img-tool">
+                                            <div class="products-main-4-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-4-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-4-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-4-content_product-1_item-add-to-card">
+                                    <div class="products-main-4-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-4-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-4-content_product-1_item no-border">
+                                <a href="" class="link"><div class="products-main-4-content_product-1_item-header">Lẩu Điện SUNHOUSE SH-535L</div></a>
+                                <div class="products-main-4-content_product-1_item-money">
+                                    <div class="products-main-4-content_product-1_item-money-price">700.000₫</div>
+                                </div>
+                                <div class="products-main-4-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-4-content_product-1_item-img-picture" src="./img/main-product-refrigeration-3.jpg" alt=""></a>
+                                    <div class="products-main-4-content_product-1_item-img-tool">
+                                            <div class="products-main-4-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-4-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-4-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-4-content_product-1_item-add-to-card">
+                                    <div class="products-main-4-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-4-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product 2 -->
+                        <div class="products-main-4-content_product-2">
+                            <div class="products-main-4-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-4-content_product-2_item-header">Nồi Áp Suất MIDEA MY-12CH501B</div></a>
+                                <div class="products-main-4-content_product-2_item-money">
+                                    <div class="products-main-4-content_product-2_item-money-price">1.200.000₫</div>
+                                </div>
+                                <div class="products-main-4-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-4-content_product-2_item-img-picture" src="./img/main-product-refrigeration-4.jpg" alt=""></a>
+                                    <div class="products-main-4-content_product-2_item-img-tool">
+                                            <div class="products-main-4-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-4-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-4-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-4-content_product-2_item-add-to-card">
+                                    <div class="products-main-4-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-4-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-4-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-4-content_product-2_item-header">Máy Giặt AQUA 12.5 Kg AQW-F125ZT, S</div></a>
+                                <div class="products-main-4-content_product-2_item-money">
+                                    <div class="products-main-4-content_product-2_item-money-price">7.205.000₫</div>
+                                </div>
+                                <div class="products-main-4-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-4-content_product-2_item-img-picture" src="./img/main-product-refrigeration-5.jpg" alt=""></a>
+                                    <div class="products-main-4-content_product-2_item-img-tool">
+                                            <div class="products-main-4-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-4-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-4-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-4-content_product-2_item-add-to-card">
+                                    <div class="products-main-4-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-4-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-4-content_product-2_item no-border">
+                                <a href="" class="link"><div class="products-main-4-content_product-2_item-header">Máy Giặt MIDEA 9.0 Kg MFG90-1200</div></a>
+                                <div class="products-main-4-content_product-2_item-money">
+                                    <div class="products-main-4-content_product-2_item-money-price">7.900.000₫</div>
+                                </div>
+                                <div class="products-main-4-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-4-content_product-2_item-img-picture" src="./img/main-product-refrigeration-6.jpg" alt=""></a>
+                                    <div class="products-main-4-content_product-2_item-img-tool">
+                                            <div class="products-main-4-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-4-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-4-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-4-content_product-2_item-add-to-card">
+                                    <div class="products-main-4-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-4-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main product 5 -->
+        <div class="products-main-5">
+            <div class="grid wide">
+                <div class="products-main-5-body">
+                    <div class="products-main-5-header">
+                        <i class="fas fa-futbol products-main-1-header_icon-shop"></i>
+                        <h1 class="products-main-5-header_text">
+                            <a href="" class="link products-main-5-header_text-link" id="product-5">
+                                NỘI THẤT
+                            </a>
+                        </h1>
+                        <i class="fas fa-chevron-right products-main-5-header_icon-right"></i>
+                    </div>
+                    <div class="products-main-5-menu">
+                        <ul class="products-main-5-menu-list">
+                            <li class="products-main-5-menu-list-item">
+                                <div class="products-main-5-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-5-menu-list-item-link link">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="products-main-5-menu-list-item">
+                                <div class="products-main-5-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-5-menu-list-item-link link">Ghế giám đốc</a>
+                            </li>
+                            <li class="products-main-5-menu-list-item">
+                                <div class="products-main-5-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-5-menu-list-item-link link">Ghế phòng họp</a>
+                            </li>
+                            <li class="products-main-5-menu-list-item">
+                                <div class="products-main-5-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-5-menu-list-item-link link">Ghế sofa</a>
+                            </li>
+                            <li class="products-main-5-menu-list-item">
+                                <div class="products-main-5-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-5-menu-list-item-link link">Bàn giám đốc</a>
+                            </li>
+                            <li class="products-main-5-menu-list-item">
+                                <div class="products-main-5-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-5-menu-list-item-link link">Bàn cao cấp</a>
+                            </li>
+                            <li class="products-main-5-menu-list-item">
+                                <div class="products-main-5-menu-list-item_border-top"></div>
+                                <a href="" class="products-main-5-menu-list-item-link link">Bàn máy tính</a>
+                            </li>
+                        </ul>
+                        <div class="products-main-5-menu-list-scroll">
+                            <a href="#product-4"><i class="fas fa-angle-up products-main-5-menu-list-scroll_item"></i></a>
+                            <i class="fas fa-angle-down products-main-5-menu-list-scroll_item no-active-btn"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-main-5-content">
+                    <div class="products-main-5-content_menu-left">
+                            <ul class="products-main-5-content_menu-left-list">
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Ghế nhân viên</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Ghế trưởng phòng</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Ghế giám đốc</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Ghế băng chờ</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Ghế phòng họp</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Ghế sofa</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Ghế xếp, ống thép</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Bàn giám đốc</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Bàn trưởng phòng</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Bàn nhân viên</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Bàn tiếp tân</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Bàn chân sắt</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Module bàn làm việc</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Bàn cao cấp</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Bàn ghế hòa phát</a>
+                                </li>
+                                <li class="products-main-5-content_menu-left-list-item">
+                                    <a href="" class="products-main-5-content_menu-left-item-link">Bàn máy tính</a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="products-main-5-content_banner no-display-tablet">
+                        <a href="" class="link"><img src="./img/main-product-interior-banner.png" alt="" class="products-main-5-content_banner-img"></a>
+                        <a href="" class="link">
+                            <div class="products-main-5-content_border">
+                                <div class="products-main-5-content_border-top"></div>
+                                <div class="products-main-5-content_border-right"></div>
+                                <div class="products-main-5-content_border-bottom"></div>
+                                <div class="products-main-5-content_border-left"></div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="products-main-5-content_product">
+                        <div class="products-main-5-content_product-1">
+                            <div class="products-main-5-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-5-content_product-1_item-header">Ghế nhựa kiểu dạng lưới cao cấp</div></a>
+                                <div class="products-main-5-content_product-1_item-money">
+                                    <div class="products-main-5-content_product-1_item-money-price">320.000₫</div>
+                                </div>
+                                <div class="products-main-5-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-5-content_product-1_item-img-picture" src="./img/main-product-interior-1.jpg" alt=""></a>
+                                    <div class="products-main-5-content_product-1_item-img-tool">
+                                            <div class="products-main-5-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-5-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-5-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-5-content_product-1_item-add-to-card">
+                                    <div class="products-main-5-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-5-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-5-content_product-1_item">
+                                <a href="" class="link"><div class="products-main-5-content_product-1_item-header">Ghế ngồi cao cấp, êm ái</div></a>
+                                <div class="products-main-5-content_product-1_item-money">
+                                    <div class="products-main-5-content_product-1_item-money-price">1.200.000₫</div>
+                                </div>
+                                <div class="products-main-5-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-5-content_product-1_item-img-picture" src="./img/main-product-interior-2.jpg" alt=""></a>
+                                    <div class="products-main-5-content_product-1_item-img-tool">
+                                            <div class="products-main-5-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-5-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-5-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-5-content_product-1_item-add-to-card">
+                                    <div class="products-main-5-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-5-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-5-content_product-1_item no-border">
+                                <a href="" class="link"><div class="products-main-5-content_product-1_item-header">Ghê kiểu cho nhân viên văn phòng</div></a>
+                                <div class="products-main-5-content_product-1_item-money">
+                                    <div class="products-main-5-content_product-1_item-money-price">1.190.000₫</div>
+                                    <div class="products-main-5-content_product-1_item-money-discount">1.300.000₫</div>
+                                </div>
+                                <div class="products-main-5-content_product-1_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-5-content_product-1_item-img-picture" src="./img/main-product-interior-3.jpg" alt=""></a>
+                                    <div class="products-main-5-content_product-1_item-img-tool">
+                                            <div class="products-main-5-content_product-1_item-img-tool-item product-1_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-5-content_product-1_item-img-tool-item product-1_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-5-content_product-1_item-img-tool-item product-1_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-5-content_product-1_item-add-to-card">
+                                    <div class="products-main-5-content_product-1_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-5-content_product-1_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product 2 -->
+                        <div class="products-main-5-content_product-2">
+                            <div class="products-main-5-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-5-content_product-2_item-header">Ghế nhựa chân cao, tiện nghi</div></a>
+                                <div class="products-main-5-content_product-2_item-money">
+                                    <div class="products-main-5-content_product-2_item-money-price">210.000₫</div>
+                                    <div class="products-main-5-content_product-2_item-money-discount">250.000₫</div>
+                                </div>
+                                <div class="products-main-5-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-5-content_product-2_item-img-picture" src="./img/main-product-interior-4.jpg" alt=""></a>
+                                    <div class="products-main-5-content_product-2_item-img-tool">
+                                            <div class="products-main-5-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-5-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-5-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-5-content_product-2_item-add-to-card">
+                                    <div class="products-main-5-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-5-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-5-content_product-2_item">
+                                <a href="" class="link"><div class="products-main-5-content_product-2_item-header">Ghê cao cấp GT3300</div></a>
+                                <div class="products-main-5-content_product-2_item-money">
+                                    <div class="products-main-5-content_product-2_item-money-price">1.450.000₫</div>
+                                    <div class="products-main-5-content_product-2_item-money-discount">1.600.000₫</div>
+                                </div>
+                                <div class="products-main-5-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-5-content_product-2_item-img-picture" src="./img/main-product-interior-5.jpg" alt=""></a>
+                                    <div class="products-main-5-content_product-2_item-img-tool">
+                                            <div class="products-main-5-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-5-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-5-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-5-content_product-2_item-add-to-card">
+                                    <div class="products-main-5-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-5-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-main-5-content_product-2_item no-border">
+                                <a href="" class="link"><div class="products-main-5-content_product-2_item-header">Ghế cao cấp TG9930</div></a>
+                                <div class="products-main-5-content_product-2_item-money">
+                                    <div class="products-main-5-content_product-2_item-money-price">1.190.000₫</div>
+                                    <div class="products-main-5-content_product-2_item-money-discount">1.350.000₫</div>
+                                </div>
+                                <div class="products-main-5-content_product-2_item-img">
+                                    <a href="" class="link" style="height: 100%;"><img class="products-main-5-content_product-2_item-img-picture" src="./img/main-product-interior-6.jpg" alt=""></a>
+                                    <div class="products-main-5-content_product-2_item-img-tool">
+                                            <div class="products-main-5-content_product-2_item-img-tool-item product-2_item-img-tool-item-heart"><i class="far fa-heart "></i></div>
+                                            <div class="products-main-5-content_product-2_item-img-tool-item product-2_item-img-tool-item-alt"><i class="fas fa-compress-alt"></i></div>
+                                            <div class="products-main-5-content_product-2_item-img-tool-item product-2_item-img-tool-item-search"><i class="fas fa-search"></i></div>
+                                    </div>
+                                </div>
+                                <div class="products-main-5-content_product-2_item-add-to-card">
+                                    <div class="products-main-5-content_product-2_item-add-to-card_icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="products-main-5-content_product-2_item-add-to-card-text">
+                                        Thêm vào giỏ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-featured-news">
+        <div class="grid wide">
+            <div class="container-featured-news_header">
+                <h2 class="container-featured-news_header-text">TIN TỨC NỔI BẬT</h2>
+                <div class="container-featured-news_header-btn">
+                    <button class="container-featured-news_header-btn-select">
+                        <i class="fas fa-chevron-left promotional-products-btn-select_left"></i>
+                    </button>
+                    <button class="container-featured-news_header-btn-select">
+                        <i class="fas fa-chevron-right promotional-products-btn-select_right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col l-3 m-6">
+                        <div class="container-featured-news_title">
+                            <div class="container-featured-news_title-img">
+                                <img src="./img/featured-news-img-1.jpg" alt="" class="container-featured-news_title-img-item">
+                                <a href="" class="link">
+                                    <div class="container-featured-news_title-img-search-box">
+                                        <i class="fas fa-search container-featured-news_title-img-search-box-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="container-featured-news_title-infor">
+                                <a href="" class="link">
+                                    <h5 class="container-featured-news_title-infor-name">
+                                        Diện váy xẻ cao quyến rũ như Miranda Kerr
+                                    </h5>
+                                </a>
+                                <div class="container-featured-news_title-content">
+                                    <i class="fas fa-calculator container-featured-news_title-content-icon-calc"></i>
+                                    <span class="container-featured-news_title-content-date">12/08/2017</span>
+                                    <i class="far fa-comment container-featured-news_title-content-icon-comment"></i>
+                                    <span class="container-featured-news_title-content-icon-comment-number">0</span>
+                                    <span class="container-featured-news_title-content-comment-text">Bình luận</span>
+                                </div>
+                                <div class="container-featured-news_title-btn-see-more">
+                                    <a href="" class="link">
+                                        <span class="container-featured-news_title-btn-see-more_btn">
+                                            Xem thêm
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6">
+                        <div class="container-featured-news_title">
+                            <div class="container-featured-news_title-img">
+                                <img src="./img/featured-news-img-2.jpg" alt="" class="container-featured-news_title-img-item">
+                                <a href="" class="link">
+                                    <div class="container-featured-news_title-img-search-box">
+                                        <i class="fas fa-search container-featured-news_title-img-search-box-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="container-featured-news_title-infor">
+                                <a href="" class="link">
+                                    <h5 class="container-featured-news_title-infor-name">
+                                        Những chiếc vòng cổ tạo đẳng cấp cho sao ngoại trên thảm đỏ
+                                    </h5>
+                                </a>
+                                <div class="container-featured-news_title-content">
+                                    <i class="fas fa-calculator container-featured-news_title-content-icon-calc"></i>
+                                    <span class="container-featured-news_title-content-date">12/08/2017</span>
+                                    <i class="far fa-comment container-featured-news_title-content-icon-comment"></i>
+                                    <span class="container-featured-news_title-content-icon-comment-number">0</span>
+                                    <span class="container-featured-news_title-content-comment-text">Bình luận</span>
+                                </div>
+                                <div class="container-featured-news_title-btn-see-more">
+                                    <a href="" class="link">
+                                        <span class="container-featured-news_title-btn-see-more_btn">
+                                            Xem thêm
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6">
+                        <div class="container-featured-news_title">
+                            <div class="container-featured-news_title-img">
+                                <img src="./img/featured-news-img-3.jpg" alt="" class="container-featured-news_title-img-item">
+                                <a href="" class="link">
+                                    <div class="container-featured-news_title-img-search-box">
+                                        <i class="fas fa-search container-featured-news_title-img-search-box-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="container-featured-news_title-infor">
+                                <a href="" class="link">
+                                    <h5 class="container-featured-news_title-infor-name">
+                                        20 bộ váy đẹp của các diễn viên từng đoạt giải Oscar
+                                    </h5>
+                                </a>
+                                <div class="container-featured-news_title-content">
+                                    <i class="fas fa-calculator container-featured-news_title-content-icon-calc"></i>
+                                    <span class="container-featured-news_title-content-date">12/08/2017</span>
+                                    <i class="far fa-comment container-featured-news_title-content-icon-comment"></i>
+                                    <span class="container-featured-news_title-content-icon-comment-number">0</span>
+                                    <span class="container-featured-news_title-content-comment-text">Bình luận</span>
+                                </div>
+                                <div class="container-featured-news_title-btn-see-more">
+                                    <a href="" class="link">
+                                        <span class="container-featured-news_title-btn-see-more_btn">
+                                            Xem thêm
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6">
+                        <div class="container-featured-news_title">
+                            <div class="container-featured-news_title-img">
+                                <img src="./img/featured-news-img-4.jpg" alt="" class="container-featured-news_title-img-item">
+                                <a href="" class="link">
+                                    <div class="container-featured-news_title-img-search-box">
+                                        <i class="fas fa-search container-featured-news_title-img-search-box-icon"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="container-featured-news_title-infor">
+                                <a href="" class="link">
+                                    <h5 class="container-featured-news_title-infor-name">
+                                        Phối quần jeans cạp cao theo phong cách thập niên 1970
+                                    </h5>
+                                </a>
+                                <div class="container-featured-news_title-content">
+                                    <i class="fas fa-calculator container-featured-news_title-content-icon-calc"></i>
+                                    <span class="container-featured-news_title-content-date">12/08/2017</span>
+                                    <i class="far fa-comment container-featured-news_title-content-icon-comment"></i>
+                                    <span class="container-featured-news_title-content-icon-comment-number">0</span>
+                                    <span class="container-featured-news_title-content-comment-text">Bình luận</span>
+                                </div>
+                                <div class="container-featured-news_title-btn-see-more">
+                                    <a href="" class="link">
+                                        <span class="container-featured-news_title-btn-see-more_btn">
+                                            Xem thêm
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-featured-news_banner">
+                <div class="container-featured-news_banner-item">
+                    <img src="./img/featured-news-banner-1.png" alt="" class="container-featured-news_banner-item_img">
+                    <div class="container-featured-news_banner-item-shaddow"></div>
+                </div>
+                <div class="container-featured-news_banner-item">
+                    <img src="./img/featured-news-banner-2.png" alt="" class="container-featured-news_banner-item_img">
+                    <div class="container-featured-news_banner-item-shaddow"></div>
+                </div>
+
+            </div>
+            <div class="container-featured-news_footer no-display-tablet">
+                <div class="container-featured-news_footer-item-1">
+                    <div class="container-featured-news_footer-item-1-1 no-border-left no-border-top">
+                        <div class="container-featured-news_footer-item-1-1-with-img">
+                            <img src="./img/container-featured-news_footer-item-1.png" alt="" class="container-featured-news_footer-item-1-1-with-img_picture">
+                            <h3 class="container-featured-news_footer-item-1-1-with-img_header">
+                                <a href="" class="link container-featured-news_footer-item-1-1-with-img_header-link">GIÁ TRỊ LỚN</a>
+                            </h3>
+                        </div>
+                        <div class="container-featured-news_footer-item-1-1-with-text">
+                            <span>Chúng tôi cung cấp giá cả cạnh tranh nhất trên từng sản phẩm, phù hợp với mọi túi tiền.</span>
+                        </div>
+                    </div>
+                    <div class="container-featured-news_footer-item-1-1 no-border-left no-border-top">
+                        <div class="container-featured-news_footer-item-1-1-with-img">
+                            <img src="./img/container-featured-news_footer-item-2.png" alt="" class="container-featured-news_footer-item-1-1-with-img_picture">
+                            <h3 class="container-featured-news_footer-item-1-1-with-img_header">
+                                <a href="" class="link container-featured-news_footer-item-1-1-with-img_header-link">GIAO HÀNG</a>
+                            </h3>
+                        </div>
+                        <div class="container-featured-news_footer-item-1-1-with-text">
+                            <span>Giao hàng tận nơi, sản phẩm sẽ có mặt tại nhà bạn từ 3 đến 5 ngày làm việc.</span>
+                        </div>
+                    </div>
+                    <div class="container-featured-news_footer-item-1-1 no-border-left no-border-top no-border-right">
+                        <div class="container-featured-news_footer-item-1-1-with-img">
+                            <img src="./img/container-featured-news_footer-item-3.png" alt="" class="container-featured-news_footer-item-1-1-with-img_picture">
+                            <h3 class="container-featured-news_footer-item-1-1-with-img_header">
+                                <a href="" class="link container-featured-news_footer-item-1-1-with-img_header-link">SẢN PHẨM</a>
+                            </h3>
+                        </div>
+                        <div class="container-featured-news_footer-item-1-1-with-text">
+                            <span>Sản phẩm chính hãng, bảo hành trên toàn quốc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-featured-news_footer-item-2">
+                    <div class="container-featured-news_footer-item-2-1 no-border-left no-border-top no-border-bottom">
+                        <div class="container-featured-news_footer-item-2-1-with-img">
+                            <img src="./img/container-featured-news_footer-item-4.png" alt="" class="container-featured-news_footer-item-2-1-with-img_picture">
+                            <h3 class="container-featured-news_footer-item-2-1-with-img_header">
+                                <a href="" class="link container-featured-news_footer-item-2-1-with-img_header-link">HỖ TRỢ</a>
+                            </h3>
+                        </div>
+                        <div class="container-featured-news_footer-item-2-1-with-text">
+                            <span>Hổ trợ 24/7.</span><br>
+                            <span>Phone: +84 908 77 00 95.</span><br>
+                            <span>Hổ trợ 24/7.</span>
+                        </div>
+                    </div>
+                    <div class="container-featured-news_footer-item-2-1 no-border-left no-border-top no-border-bottom">
+                        <div class="container-featured-news_footer-item-2-1-with-img">
+                            <img src="./img/container-featured-news_footer-item-5.png" alt="" class="container-featured-news_footer-item-2-1-with-img_picture">
+                            <h3 class="container-featured-news_footer-item-2-1-with-img_header">
+                                <a href="" class="link container-featured-news_footer-item-2-1-with-img_header-link">ỨNG DỤNG</a>
+                            </h3>
+                        </div>
+                        <div class="container-featured-news_footer-item-2-1-with-text">
+                            <span>Cài đặt ứng dụng khi mua hàng sẽ được giảm giá đặc biệt từ 5 đến 10%.</span>
+                        </div>
+                    </div>
+                    <div class="container-featured-news_footer-item-2-1 no-border-left no-border-top no-border-right no-border-bottom">
+                        <div class="container-featured-news_footer-item-2-1-with-img">
+                            <img src="./img/container-featured-news_footer-item-6.png" alt="" class="container-featured-news_footer-item-2-1-with-img_picture">
+                            <h3 class="container-featured-news_footer-item-2-1-with-img_header">
+                                <a href="" class="link container-featured-news_footer-item-2-1-with-img_header-link">THANH TOÁN</a>
+                            </h3>
+                        </div>
+                        <div class="container-featured-news_footer-item-2-1-with-text">
+                            <span>Thanh toán khi nhận hàng.</span><br>
+                            <span>Phương thức thanh toán đa dạng.</span><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" >
+        <div class="grid wide">
+            <div class="footer-main">
+                <div class="footer-main-1">
+                    <div class="footer-main-1-with-logo">
+                        <a href="" class="link"><img src="./img/logo-l.png" alt="" class="footer-main-1-with-logo_img"></a>
+                        <div class="footer-main-1-with-logo_text">
+                            <b>Địa chỉ:</b>    1005 Quang Trung, P.14, Q.Gò Vấp, Tp.HCM<br>
+                            <b>Điện thoại:</b>    (08) 66 85 85 38<br>
+                            <b>Email:</b>    run02@runtime.vn
+                        </div>
+                    </div>
+                    <div class="footer-main-1-with-menu no-display-tablet">
+                        <div class="footer-main-1-with-menu-main no-display-tablet">
+                            <h3 class="footer-main-1-with-menu-main-header">VỀ CHÚNG TÔI</h3>
+                            <ul class="footer-main-1-with-menu-main-list">
+                                <li class="footer-main-1-with-menu-main-list-item">
+                                    <a href="" class="footer-main-1-with-menu-main-list-item-link">Giới thiệu</a>
+                                </li>
+                                <li class="footer-main-1-with-menu-main-list-item">
+                                    <a href="" class="footer-main-1-with-menu-main-list-item-link">Giao hàng - Đổi trả</a>
+                                </li>
+                                <li class="footer-main-1-with-menu-main-list-item">
+                                    <a href="" class="footer-main-1-with-menu-main-list-item-link">Chính sách bảo mật</a>
+                                </li>
+                                <li class="footer-main-1-with-menu-main-list-item">
+                                    <a href="" class="footer-main-1-with-menu-main-list-item-link">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>      
+                        <div class="footer-main-1-with-menu-main no-display-tablet">
+                            <h3 class="footer-main-1-with-menu-main-header">TRỢ GIÚP</h3>
+                            <ul class="footer-main-1-with-menu-main-list">
+                                <li class="footer-main-1-with-menu-main-list-item">
+                                    <a href="" class="footer-main-1-with-menu-main-list-item-link">Hướng dẫn mua hàng</a>
+                                </li>
+                                <li class="footer-main-1-with-menu-main-list-item">
+                                    <a href="" class="footer-main-1-with-menu-main-list-item-link">Hướng dẫn thanh toán</a>
+                                </li>
+                                <li class="footer-main-1-with-menu-main-list-item">
+                                    <a href="" class="footer-main-1-with-menu-main-list-item-link">Tài khoản giao dịch</a>
+                                </li>
+                            </ul>
+                        </div>                   
+                    </div>
+                    <div class="footer-main-1-with-contact">
+                        <div class="footer-main-1-with-contact-registration">
+                            <div class="footer-main-1-with-contact-registration_header">ĐĂNG KÝ NHẬN TIN</div>
+                            <div class="footer-main-1-with-contact-registration-input">
+                                <input type="text" class="footer-main-1-with-contact-registration-input_item" placeholder="Đăng ký email">
+                                <button class="footer-main-1-with-contact-registration-input_btn">Gửi</button>
+                            </div>
+                        </div>
+
+                        <div class="footer-main-1-with-contact-contact">
+                            <div class="footer-main-1-with-contact-contact_header">LIÊN KẾT</div>
+                            <div class="footer-main-1-with-contact-contact_icon">
+                                <a href="" class="link footer-main-1-with-contact-contact_icon-item"><i class="fab fa-facebook-square footer-main-1-with-contact-contact_icon-fb "></i></a>
+                                <a href="" class="link footer-main-1-with-contact-contact_icon-item"><i class="fab fa-youtube footer-main-1-with-contact-contact_icon-yt "></i></a>
+                                <a href="" class="link footer-main-1-with-contact-contact_icon-item"><i class="fab fa-twitter-square footer-main-1-with-contact-contact_icon-tw "></i></a>
+                                <a href="" class="link footer-main-1-with-contact-contact_icon-item"><i class="fab fa-google-plus-square footer-main-1-with-contact-contact_icon-gl "></i></a>           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-main-2 no-display-tablet">
+                    <div class="footer-main-2_header">PHƯƠNG THỨC THANH TOÁN</div>
+                    <div class="footer-main-2_img">
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-1.jpg" alt=""></a>
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-2.jpg" alt=""></a>
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-3.jpg" alt=""></a>
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-4.jpg" alt=""></a>
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-5.jpg" alt=""></a>
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-6.jpg" alt=""></a>
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-7.jpg" alt=""></a>
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-8.jpg" alt=""></a>
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-9.jpg" alt=""></a>
+                        <a href="" class="link footer-main-2_img-item"><img src="./img/pay-img-10.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="footer-main-3">
+                    © Bản quyền thuộc về &nbsp;<a href="" class="footer-main-3-rs link">RUNTIME STORE</a> &nbsp; | &nbsp; <a href="" class="footer-main-3-powered link"> Powered by RUNTIME.VN</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

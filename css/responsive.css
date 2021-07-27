@@ -1,0 +1,201 @@
+/* PC */
+@media (min-width: 1023px) {
+    .no-display-pc {
+        display: none;
+    }
+}
+
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    .no-display-mobile-tablet {
+        display: none;
+    }
+
+    .header-nav-bar-list_responsive {
+        display: block;
+        display: flex;
+    }
+
+    .header-nav-bar-list {
+        padding: 5px;
+    }
+}
+
+/* Tablet pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .no-display-tablet-pro {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .no-display-tablet {
+        display: none;
+    }
+    .header-menu-list {
+        flex: 1;
+    }
+    .header-menu-list_responsive {
+        display: block;
+    }
+    .container-main-banner-slide {
+        width: 100%;
+        height: 100%;
+    }
+    .container-main-banner-slide-img_link::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.103);
+        width: 70px;
+        height: 100%;
+    }
+    .container-main-banner-slide-img_link::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.103);
+        width: 70px;
+        height: 100%;
+    }
+    .container-main-banner-slide-img_link:hover::before {
+        background-color: rgba(0, 0, 0, 0.267);
+    }
+    .container-main-banner-slide-img_link:hover::after {
+        background-color: rgba(0, 0, 0, 0.267);
+    }
+    .container-main-banner-slide-number {
+        align-items: center;
+        right: 270px;
+    }
+    .products-main-1-header {
+        width: 95%;
+    }
+    .products-main-1-menu {
+        width: 5%;
+    }
+    .products-main-1-menu-list-item {
+        display: none;
+    }
+    .products-main-2-header {
+        width: 95%;
+    }
+    .products-main-2-menu {
+        width: 5%;
+    }
+    .products-main-2-menu-list-item {
+        display: none;
+    }
+    .products-main-3-header {
+        width: 95%;
+    }
+    .products-main-3-menu {
+        width: 5%;
+    }
+    .products-main-3-menu-list-item {
+        display: none;
+    }
+    .products-main-4-header {
+        width: 95%;
+    }
+    .products-main-4-menu {
+        width: 5%;
+    }
+    .products-main-4-menu-list-item {
+        display: none;
+    }
+    .products-main-5-header {
+        width: 95%;
+    }
+    .products-main-5-menu {
+        width: 5%;
+    }
+    .products-main-5-menu-list-item {
+        display: none;
+    }
+    .products-main-1-content_menu-left {
+        width: 30%;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .products-main-1-content_product {
+        width: 70%;
+    }
+    .products-main-2-content_menu-left {
+        width: 30%;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .products-main-2-content_product {
+        width: 70%;
+    }
+    .products-main-3-content_menu-left {
+        width: 30%;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .products-main-3-content_product {
+        width: 70%;
+    }
+    .products-main-4-content_menu-left {
+        width: 30%;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .products-main-4-content_product {
+        width: 70%;
+    }
+    .products-main-5-content_menu-left {
+        width: 30%;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    .products-main-5-content_product {
+        width: 70%;
+    }
+    .container-featured-news_title {
+        margin-left: 20px;
+    }
+    .footer-main-3 {
+        margin-top: 50px;
+    }
+    .footer-main-1-with-contact {
+        margin-left: 130px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .no-display-mobile {
+        display: none;
+    }
+    .header-with-search-main_search {
+        margin-right: 10px;
+    }
+    .main_search-input {
+        margin-left: 10px;
+    }
+    .main_search-btn_responsive {
+        display: block;
+    }
+    .main_card {
+        margin-right: 0px;
+        border: none;
+    }
+    .main_login {
+        border: none;
+    }
+    .header-menu-list-drop-right-item-link_responsive {
+        font-size: 1.6rem;
+    }
+    .header-menu-list-drop-right-item_responsive {
+        border-bottom: 1px solid #cecece;
+        justify-content: space-between;
+    }
+    .container-main-banner-slide {
+        width: 100%;
+    }
+}

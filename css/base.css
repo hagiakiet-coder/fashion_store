@@ -1,0 +1,97 @@
+:root {
+    /* color text */
+    --nav-text-color-text: #aaaaaa;
+    --hotline-color-text: #FF3366;
+    --btn-color-text: #ffffff;
+    --black-color-text: #000000;
+    --white-color-text: #ffffff;
+    --category-drop-color: #ff3366;
+    --price-color: #FF3366;
+    /* background color */
+    --nav-background-color: #F5F5F5;
+    --nav-with-search-color: #FFFFFF;
+    --nav-menu-color: #958457;
+    --add-card-color: #958457;
+    /* width */
+    /* height */
+    --header-height: 200px;
+    --header-nav-bar-height: 34px;
+    --header-with-search-height: 116px;
+    --header-menu-height: 50px;
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;border: 0;margin: 0;
+}
+
+/* a link */
+.link {
+    text-decoration: none;
+    display: block;
+}
+
+
+/* keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* display */
+.display-flex {
+    display: flex;
+}
+
+/* BTN color setting */
+.no-active-btn {
+    color: #CCC;
+    cursor: default;
+}
+
+
+/* fix error dislay flex */
+.flex {
+    display: flex;
+}
+
+/* padding */
+.no-padding {
+    padding: 0px;
+}
+
+/* Boder style */
+.no-border {
+    border: none;
+}
+
+.no-border-left {
+    border-left: none;
+}
+
+.no-border-top {
+    border-top: none;
+}
+
+.no-border-bottom {
+    border-bottom: none;
+}
+
+.no-border-right {
+    border-right: none;
+}
+
+
+/* Animation */
